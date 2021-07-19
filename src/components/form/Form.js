@@ -8,7 +8,8 @@ const Form = (props) => {
     const handleSubmit=(event)=>{
         event.preventDefault();
         const newTaskItem = [...tasks,{title:newTask, isDone:false}];
-        setTasks(newTaskItem)
+        setTasks(newTaskItem);
+        setNewTask("");
 
     }
   return (
